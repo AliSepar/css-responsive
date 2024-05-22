@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* smaller then 300px */
+@media only screen and (max-width:300px){
+    body{
+        background-color: red;
+    }
+}
+
+/* bigger then 300px and smaller the 768px */
+@media only screen and (min-width:300px) and (max-width:768px){
+    body{
+        background-color: green;
+    }
+}
+
+/* bigger the 768px */
+@media only screen and (min-width:768px){
+    body{
+        background-color: blue;
+    }
+}
+
