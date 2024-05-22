@@ -3,10 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+div{
+    background-color: white;
+    width: 150px;
+    height: 100px;
+    margin: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
 /* smaller then 300px */
 @media only screen and (max-width:300px){
     body{
         background-color: red;
+    }
+    /* to show only small div 
+    #medium{
+        display: none;
+    }
+    #large{
+        display: none;
+    } */
+    div{ 
+        font-size: 14px;
     }
 }
 
@@ -14,13 +39,44 @@
 @media only screen and (min-width:300px) and (max-width:768px){
     body{
         background-color: green;
+        display: flex;
+        flex-direction: row;
     }
+    
+    div{ 
+        width: 250px;
+        height: 150px;
+        font-size: 18px;
+    }
+
+    /* to show only medium */
+    /* #small{
+        display: none;
+    }
+    #large{
+        display: none;
+    } */
 }
 
 /* bigger the 768px */
 @media only screen and (min-width:768px){
     body{
         background-color: blue;
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; */
     }
+    
+    div{ 
+        font-size: 25px;
+    }
+/* 
+to show only large div
+    #small{
+        display: none;
+    }
+    #medium{
+        display: none;
+    } */
 }
 
